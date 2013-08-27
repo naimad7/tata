@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="@dimen/default_dialog_width"
+              android:layout_height="match_parent">
+
+    <TextView
+            style="@style/SmallTextAppearanceDark"
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:text="example"/>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@drawable/divider"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default_size">
+    <Button
+            style="@style/SmallTextAppearanceDark"
+            android:id="@+id/btn_cancel"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/btn_transparent_selector"
+            android:text="@string/cancel"/>
+        <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:background="@drawable/divider"/>
+        <Button
+                style="@style/SmallTextAppearanceDark"
+                android:id="@+id/btn_ok"
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_transparent_selector"
+                android:text="@string/ok"/>
+    </LinearLayout>
+
+</LinearLayout>

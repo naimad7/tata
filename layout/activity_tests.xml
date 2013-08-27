@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default_size"
+            android:background="@drawable/title_bar_light">
+
+        <LinearLayout
+                android:id="@+id/activity_close"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_default_size"
+                android:background="@drawable/list_selector">
+
+            <ImageView
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_previous_item_light"/>
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+                <TextView
+                        style="@style/TitleBarTextAppearanceLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_tests_title"
+                        android:layout_marginTop="@dimen/item_margin_small"
+                        android:paddingRight="@dimen/size_default_space"
+                        />
+                <TextView
+                        android:id="@+id/user_name"
+                        style="@style/SmallTextAppearanceDark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/activity_info_title"
+                        android:layout_alignParentBottom="true"
+                        android:textColor="@color/secondary_color_light"
+                        android:layout_marginBottom="@dimen/item_margin_small"
+                        android:paddingRight="@dimen/size_default_space"
+                        />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+            style="@style/SmallTextAppearanceDark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Załaduj transporty i przesyłki"
+            android:id="@+id/load_transports"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/btn_transparent_selector"/>
+
+    <Button
+            style="@style/SmallTextAppearanceDark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Załaduj lokalizacje"
+            android:id="@+id/load_loactions"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/btn_transparent_selector"/>
+
+    <Button
+            style="@style/SmallTextAppearanceDark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/load_users"
+            android:id="@+id/load_users"
+            android:layout_gravity="left|center_vertical"
+            android:background="@drawable/btn_transparent_selector"/>
+
+
+</LinearLayout>

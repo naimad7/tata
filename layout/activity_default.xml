@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default_size"
+            android:background="@drawable/title_bar_light">
+
+        <RelativeLayout
+                android:id="@+id/button_menu"
+                android:layout_height="@dimen/size_default_size"
+                android:layout_width="wrap_content"
+                android:background="@drawable/btn_transparent_selector"
+                android:layout_alignParentLeft="true"
+                >
+
+            <ImageView
+                    android:id="@+id/more"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_title_more_light"
+                    />
+
+            <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_launcher"
+                    />
+
+            <TextView
+                    android:id="@+id/title"
+                    style="@style/TitleBarTextAppearanceLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_alignParentTop="true"
+                    android:paddingRight="@dimen/size_default_space"
+                    android:layout_marginLeft="@dimen/size_default_space"
+                    android:layout_marginTop="@dimen/item_margin_small"
+                    android:text="@string/menu"
+                    />
+
+            <TextView
+                    android:id="@+id/user_name"
+                    style="@style/SmallTextAppearanceDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/icon"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/secondary_color_dark"
+                    android:paddingRight="@dimen/size_default_space"
+                    android:layout_marginLeft="@dimen/size_default_space"
+                    android:layout_marginBottom="@dimen/item_margin_small"
+                    android:text="@string/menu"
+                    />
+
+        </RelativeLayout>
+
+
+        <ImageButton
+                android:id="@+id/log_out_button"
+                style="@style/TransparentButton"
+                android:layout_width="@dimen/size_default_size"
+                android:layout_height="@dimen/size_default_size"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_user_dark"/>
+
+    </RelativeLayout>
+
+    <ListView
+            android:id="@+id/packages_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_bar"
+            android:divider="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/transparent"
+            android:background="@color/darker_app_bg"/>
+
+    <RelativeLayout
+            android:id="@+id/overflow_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title_bar">
+
+    </RelativeLayout>
+
+</RelativeLayout>

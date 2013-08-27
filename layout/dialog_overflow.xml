@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                android:layout_height="fill_parent">
+
+
+    <ListView
+            android:id="@+id/list_overflow_menu"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:divider="@drawable/divider"
+            android:listSelector="@drawable/list_selector"
+            android:cacheColorHint="@color/transparent"
+            android:background="@drawable/side_bar_bg"
+
+
+            >
+    </ListView>
+
+    <View
+            android:id="@+id/dummy_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/list_overflow_menu"
+
+            android:clickable="true"
+            />
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default_size"
+            android:background="@drawable/title_bar_bg">
+
+        <RelativeLayout
+                android:id="@+id/button_activity_close"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_default_size"
+                android:background="@drawable/btn_transparent_selector">
+
+            <ImageView
+                    android:id="@+id/prev"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_previous"
+
+                    />
+
+            <TextView
+                    android:id="@+id/textView1"
+                    style="@style/TitleBarTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="@dimen/item_margin_small"
+                    android:layout_marginLeft="@dimen/size_default_space"
+                    android:paddingRight="@dimen/size_default_space"
+                    android:text="@string/logs_text"
+                    android:layout_toRightOf="@+id/prev"/>
+            <TextView
+                    android:id="@+id/user_name"
+                    style="@style/SmallTextAppearanceLight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/secondary_color_light"
+                    android:layout_marginBottom="@dimen/item_margin_small"
+                    android:layout_marginLeft="@dimen/size_default_space"
+                    android:paddingRight="@dimen/size_default_space"
+                    android:text="@string/logs_text"
+                    android:layout_toRightOf="@+id/prev"/>
+
+        </RelativeLayout>
+
+        <ImageButton
+                android:id="@+id/button_clear"
+                android:layout_width="@dimen/size_default_size"
+                android:layout_height="@dimen/size_default_size"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/size_default_size"
+                android:layout_centerVertical="true"
+                style="@style/TransparentButton"
+                android:src="@drawable/ic_action_delete"/>
+
+        <ImageButton
+                android:id="@+id/button_send"
+                android:layout_width="@dimen/size_default_size"
+                android:layout_height="@dimen/size_default_size"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerVertical="true"
+                style="@style/TransparentButton"
+                android:src="@drawable/ic_action_send"/>
+    </RelativeLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_shadow"
+            android:layout_below="@+id/relativeLayout1"/>
+
+    <ListView
+            android:id="@+id/logs_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/item_margin"
+            android:layout_marginRight="@dimen/item_margin"
+            android:layout_below="@+id/relativeLayout1">
+    </ListView>
+
+</RelativeLayout>

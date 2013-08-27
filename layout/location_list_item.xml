@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+               >
+    <TextView
+            android:id="@+id/text_longitude"
+            style="@style/MediumTextAppearanceDark"
+            android:paddingLeft="@dimen/size_default_space"
+            android:paddingRight="@dimen/size_default_space"
+            android:paddingBottom="2dp"
+            android:paddingTop="@dimen/size_default_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="sffskfjksjf"/>
+    <TextView
+            android:id="@+id/text_latitude"
+            style="@style/MediumTextAppearanceDark"
+            android:paddingLeft="@dimen/size_default_space"
+            android:paddingRight="@dimen/size_default_space"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="sffskfjksjf"/>
+    <TextView
+            android:id="@+id/text_accuracy"
+            style="@style/SmallTextAppearanceDark"
+            android:paddingLeft="@dimen/size_default_space"
+            android:paddingRight="@dimen/size_default_space"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:textColor="@color/secondary_color_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sffskfjksjf"/>
+    <TextView
+            android:id="@+id/text_date"
+            style="@style/SmallTextAppearanceDark"
+            android:textColor="@color/secondary_color_dark"
+            android:paddingLeft="@dimen/size_default_space"
+            android:paddingRight="@dimen/size_default_space"
+            android:paddingTop="2dp"
+            android:paddingBottom="@dimen/size_default_space"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sffskfjksjf"/>
+
+</LinearLayout>

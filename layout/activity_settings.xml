@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_default_size"
+            android:background="@drawable/title_bar_bg">
+
+        <LinearLayout
+                android:id="@+id/activity_close"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_default_size"
+                android:orientation="horizontal"
+                android:background="@drawable/list_selector">
+
+            <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_previous"
+                    />
+            <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                <TextView
+                        style="@style/TitleBarTextAppearance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                       android:layout_alignParentTop="true"
+                        android:layout_marginTop="@dimen/item_margin_small"
+                        android:paddingRight="@dimen/size_default_space"
+                        android:text="@string/activity_settings_title"
+                        />
+                <TextView
+                        android:id="@+id/user_name"
+                        style="@style/SmallTextAppearanceLight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+
+                        android:textColor="@color/secondary_color_light"
+                        android:layout_marginBottom="@dimen/item_margin_small"
+                        android:paddingRight="@dimen/size_default_space"
+                        android:text="@string/activity_settings_title"
+                        />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+<ListView
+        android:id="@+id/settings_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_bar"
+        android:divider="@drawable/divider"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@drawable/btn_transparent_selector"
+        android:scrollbars="none"
+        android:layout_marginRight="@dimen/size_default_space"
+        android:descendantFocusability="blocksDescendants"
+
+        android:layout_marginLeft="@dimen/size_default_space"/>
+
+
+</RelativeLayout>

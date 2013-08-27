@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="260dp"
+            android:layout_height="match_parent">
+        <TextView
+                style="@style/MediumTextAppearanceDark"
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/size_default_space"
+                android:layout_marginTop="@dimen/size_default_space"
+                android:textStyle="bold"
+                android:text="TEXT"/>
+        <TextView
+                style="@style/SmallTextAppearanceDark"
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:paddingLeft="@dimen/size_default_space"
+                android:layout_marginBottom="@dimen/size_default_space"
+                android:text="TEXT2"/>
+
+
+    </LinearLayout>
+<CheckBox
+        android:id="@+id/checkbox"
+
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical|right"
+           android:focusable="false"
+           android:clickable="false"
+        android:paddingRight="@dimen/size_default_space"
+        android:button="@drawable/custom_checkbox"/>
+</LinearLayout>

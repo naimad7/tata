@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+        android:background="@color/darker_app_bg">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/blue">
+        <TextView
+
+                style="@style/MediumTextAppearanceDark"
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:id="@+id/package_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="8888"
+                android:layout_alignParentRight="true"
+                android:gravity="right|center_vertical"
+                android:ellipsize="start"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+
+                />
+        <ImageButton
+                android:id="@+id/activity_close"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_cancel"
+                android:background="@drawable/btn_transparent_normal"
+                android:layout_centerVertical="true"
+
+                />
+
+    </RelativeLayout>
+
+
+
+<RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_alignParentBottom="true">
+
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+            android:id="@+id/back"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@drawable/main_item_view"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="C"/>
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+            android:id="@+id/confirm"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/main_item_view"
+            android:text="OK"/>
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+        android:id="@+id/zero"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_item_view"
+            android:text="0"/>
+
+</RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/last_bar"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_above="@+id/bottom_bar">
+
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+            android:id="@+id/nine"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@drawable/main_item_view"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:text="9"/>
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+            android:id="@+id/seven"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/main_item_view"
+            android:text="7"/>
+    <Button
+            android:textAppearance="@style/LargeTextAppearanceDark"
+            android:id="@+id/eight"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/main_item_view"
+            android:text="8"/>
+
+</RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/second_bar"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_above="@+id/last_bar">
+
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/six"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:background="@drawable/main_item_view"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="6"/>
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/four"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_item_view"
+                android:text="4"/>
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/five"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_item_view"
+                android:text="5"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/first_bar"
+            android:layout_width="match_parent"
+            android:layout_height="106dp"
+            android:layout_above="@+id/second_bar">
+
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/three"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:background="@drawable/main_item_view"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:text="3"/>
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/one"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_item_view"
+                android:text="1"/>
+        <Button
+                android:textAppearance="@style/LargeTextAppearanceDark"
+                android:id="@+id/two"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/main_item_view"
+                android:text="2"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
